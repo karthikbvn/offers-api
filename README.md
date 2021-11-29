@@ -14,11 +14,11 @@ has expired users may cancel it.
 
 
 The following are tasks that the application supports:
-- Create a new offer with expiry date in the backend system - POST /offers
-- Get the offer using the offer id - GET /offers/{id}
-- Get all the offers in the backend system - GET /offers
-- Cancel an existing offer before it is expired in the backend system - POST /offers/{id}/cancel
-- Delete an existing offer in the backend system - DELETE /offers/{id}
+- Create a new offer with expiry date in the backend system - `POST /offers`
+- Get the offer using the offer id - `GET /offers/{id}`
+- Get all the offers in the backend system - `GET /offers`
+- Cancel an existing offer before it is expired in the backend system - `POST /offers/{id}/cancel`
+- Delete an existing offer in the backend system - `DELETE /offers/{id}`
 - A Scheduler configured with a cron expression to run everyday midnight which updates the status for expired offers
 
 Technologies used:
@@ -62,6 +62,7 @@ docker run -p8050:8050 offers-api:1.0.0
 
 ## Swagger Document and testing
 Below endpoint can be used to see the documentation in browser and also tryout the APIs
+
 http://localhost:8050/api-docs
 
 ## Access Database
